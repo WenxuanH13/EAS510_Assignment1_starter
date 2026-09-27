@@ -81,13 +81,29 @@ def rule1_metadata(target, input_path):
     out = {"rule": 1, "name": "Metadata", "fired": False, "score": 0,
            "out_of": 30, "note": "Size ratio 0.00", "metric": 0.0}
     try:
-        src_size = os.path.getsize(target["path"])
-        in_size = os.path.getsize(input_path)
+        src_size = os.stat(target["path"]).st_size
+        in_size = os.stat(input_path).st_size
         src_w, src_h = _size(target["path"]) or (0, 0)
         in_w, in_h = _size(input_path) or (0, 0)
         size_ratio = min(src_size, in_size) / max(src_size, in_size)
         area_kept = (in_w * in_h) / max(1, src_w * src_h)
-        metric = 0.5 * size_ratio + 0.5 * min(1.0, area_kept)
+        with open(target["path"],"rb") as f:
+            header = f.read(16)
+            if header[:2] == b"\xFF\xD8":
+                src_format = "JPEG"
+            if header[:8] == b"\x89PNG":
+                src_format = "PNG"
+        with open(input_path,"rb") as f:
+            header = f.read(16)
+            if header[:2] == b"\xFF\xD8":
+                in_format = "JPEG"
+            if header[:8] == b"\x89PNG":
+                in_format = "PNG"
+        if src_format == in_format:
+            format_metric = 1.0
+        else:
+            format_metric = 0.0
+        metric = 0.35 * size_ratio + 0.35 * min(1.0, area_kept) + 0.3 * format_metric
         out["metric"] = round(max(0.0, min(1.0, metric)), 3)
         out["note"] = f"Size ratio {out['metric']:.2f}"
         if out["metric"] >= 0.6:
