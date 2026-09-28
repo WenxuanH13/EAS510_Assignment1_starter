@@ -29,7 +29,7 @@ Rule 3 (Template): NO MATCH - Match score 0.21 -> 0/40 points
 Final Score: 47/100 -> REJECTED
 
 Processing: modified_00_format_png.png
-Rule 1 (Metadata): NO MATCH - Size ratio 0.00 -> 0/30 points
+Rule 1 (Metadata): NO MATCH - Size ratio 0.40 -> 0/30 points
 Rule 2 (Histogram): FIRED - Correlation 1.00 -> 30/30 points
 Rule 3 (Template): FIRED - Match score 1.00 -> 40/40 points
 Final Score: 70/100 -> MATCH to original_00
@@ -65,7 +65,7 @@ Rule 3 (Template): NO MATCH - Match score 0.29 -> 0/40 points
 Final Score: 52/100 -> MATCH to original_01
 
 Processing: modified_01_format_png.png
-Rule 1 (Metadata): NO MATCH - Size ratio 0.00 -> 0/30 points
+Rule 1 (Metadata): NO MATCH - Size ratio 0.39 -> 0/30 points
 Rule 2 (Histogram): FIRED - Correlation 1.00 -> 30/30 points
 Rule 3 (Template): FIRED - Match score 1.00 -> 40/40 points
 Final Score: 70/100 -> MATCH to original_01
@@ -101,7 +101,7 @@ Rule 3 (Template): NO MATCH - Match score 0.05 -> 0/40 points
 Final Score: 51/100 -> MATCH to original_02
 
 Processing: modified_02_format_png.png
-Rule 1 (Metadata): NO MATCH - Size ratio 0.00 -> 0/30 points
+Rule 1 (Metadata): NO MATCH - Size ratio 0.40 -> 0/30 points
 Rule 2 (Histogram): FIRED - Correlation 1.00 -> 30/30 points
 Rule 3 (Template): FIRED - Match score 1.00 -> 40/40 points
 Final Score: 70/100 -> MATCH to original_02
@@ -137,7 +137,7 @@ Rule 3 (Template): NO MATCH - Match score 0.36 -> 0/40 points
 Final Score: 51/100 -> MATCH to original_03
 
 Processing: modified_03_format_png.png
-Rule 1 (Metadata): NO MATCH - Size ratio 0.00 -> 0/30 points
+Rule 1 (Metadata): NO MATCH - Size ratio 0.39 -> 0/30 points
 Rule 2 (Histogram): FIRED - Correlation 1.00 -> 30/30 points
 Rule 3 (Template): FIRED - Match score 1.00 -> 40/40 points
 Final Score: 70/100 -> MATCH to original_03
@@ -173,7 +173,7 @@ Rule 3 (Template): NO MATCH - Match score 0.07 -> 0/40 points
 Final Score: 52/100 -> MATCH to original_04
 
 Processing: modified_04_format_png.png
-Rule 1 (Metadata): NO MATCH - Size ratio 0.00 -> 0/30 points
+Rule 1 (Metadata): NO MATCH - Size ratio 0.40 -> 0/30 points
 Rule 2 (Histogram): FIRED - Correlation 1.00 -> 30/30 points
 Rule 3 (Template): FIRED - Match score 1.00 -> 40/40 points
 Final Score: 70/100 -> MATCH to original_04
@@ -209,7 +209,7 @@ Rule 3 (Template): NO MATCH - Match score 0.11 -> 0/40 points
 Final Score: 52/100 -> MATCH to original_05
 
 Processing: modified_05_format_png.png
-Rule 1 (Metadata): NO MATCH - Size ratio 0.00 -> 0/30 points
+Rule 1 (Metadata): NO MATCH - Size ratio 0.39 -> 0/30 points
 Rule 2 (Histogram): FIRED - Correlation 1.00 -> 30/30 points
 Rule 3 (Template): FIRED - Match score 1.00 -> 40/40 points
 Final Score: 70/100 -> MATCH to original_05
@@ -245,7 +245,7 @@ Rule 3 (Template): NO MATCH - Match score 0.23 -> 0/40 points
 Final Score: 52/100 -> MATCH to original_06
 
 Processing: modified_06_format_png.png
-Rule 1 (Metadata): NO MATCH - Size ratio 0.00 -> 0/30 points
+Rule 1 (Metadata): NO MATCH - Size ratio 0.40 -> 0/30 points
 Rule 2 (Histogram): FIRED - Correlation 1.00 -> 30/30 points
 Rule 3 (Template): FIRED - Match score 1.00 -> 40/40 points
 Final Score: 70/100 -> MATCH to original_06
@@ -281,7 +281,7 @@ Rule 3 (Template): NO MATCH - Match score 0.09 -> 0/40 points
 Final Score: 49/100 -> REJECTED
 
 Processing: modified_07_format_png.png
-Rule 1 (Metadata): NO MATCH - Size ratio 0.00 -> 0/30 points
+Rule 1 (Metadata): NO MATCH - Size ratio 0.41 -> 0/30 points
 Rule 2 (Histogram): FIRED - Correlation 1.00 -> 30/30 points
 Rule 3 (Template): FIRED - Match score 1.00 -> 40/40 points
 Final Score: 70/100 -> MATCH to original_07
@@ -317,7 +317,7 @@ Rule 3 (Template): NO MATCH - Match score 0.28 -> 0/40 points
 Final Score: 51/100 -> MATCH to original_08
 
 Processing: modified_08_format_png.png
-Rule 1 (Metadata): NO MATCH - Size ratio 0.00 -> 0/30 points
+Rule 1 (Metadata): NO MATCH - Size ratio 0.40 -> 0/30 points
 Rule 2 (Histogram): FIRED - Correlation 1.00 -> 30/30 points
 Rule 3 (Template): FIRED - Match score 1.00 -> 40/40 points
 Final Score: 70/100 -> MATCH to original_08
@@ -353,7 +353,7 @@ Rule 3 (Template): FIRED - Match score 0.63 -> 25/40 points
 Final Score: 74/100 -> MATCH to original_09
 
 Processing: modified_09_format_png.png
-Rule 1 (Metadata): NO MATCH - Size ratio 0.00 -> 0/30 points
+Rule 1 (Metadata): NO MATCH - Size ratio 0.39 -> 0/30 points
 Rule 2 (Histogram): FIRED - Correlation 1.00 -> 30/30 points
 Rule 3 (Template): FIRED - Match score 1.00 -> 40/40 points
 Final Score: 70/100 -> MATCH to original_09

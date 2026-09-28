@@ -91,13 +91,13 @@ def rule1_metadata(target, input_path):
             header = f.read(16)
             if header[:2] == b"\xFF\xD8":
                 src_format = "JPEG"
-            if header[:8] == b"\x89PNG":
+            elif header[:4] == b"\x89PNG":
                 src_format = "PNG"
         with open(input_path,"rb") as f:
             header = f.read(16)
             if header[:2] == b"\xFF\xD8":
                 in_format = "JPEG"
-            if header[:8] == b"\x89PNG":
+            elif header[:4] == b"\x89PNG":
                 in_format = "PNG"
         if src_format == in_format:
             format_metric = 1.0
