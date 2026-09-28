@@ -103,10 +103,10 @@ def rule1_metadata(target, input_path):
             format_metric = 1.0
         else:
             format_metric = 0.0
-        metric = 0.4 * size_ratio + 0.4 * min(1.0, area_kept) + 0.2 * format_metric
+        metric = 0.5 * size_ratio + 0.3 * min(1.0, area_kept) + 0.2 * format_metric
         out["metric"] = round(max(0.0, min(1.0, metric)), 4)
         out["note"] = f"Size ratio {out['metric']:.2f}"
-        if out["metric"] >= 0.3:
+        if out["metric"] >= 0.1:
             out["fired"] = True
             out["score"] = int(round(out["out_of"] * out["metric"]))
     except Exception:
@@ -125,7 +125,7 @@ def rule2_histogram(target, input_path):
         corr = float(cv2.compareHist(hs, hi, cv2.HISTCMP_CORREL))
         out["metric"] = round(max(0.0, min(1.0, corr)), 3)
         out["note"] = f"Correlation {out['metric']:.2f}"
-        if out["metric"] >= 0.16:
+        if out["metric"] >= 0.04:
             out["fired"] = True
             out["score"] = int(round(out["out_of"] * out["metric"]))
     except Exception:
