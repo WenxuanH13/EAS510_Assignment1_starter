@@ -76,6 +76,37 @@ Rule 3 (Template): FIRED - Match score 0.76 -> 30/40 points
 Final Score: 75/100 -> MATCH to original_03.jpg
 ```
 
+
+## Observed weakness in V1: what failed and why
+Much of the weakness in V1 were due to the lack of reuslts in rule 3. 
+Many of the images that were rejected were because of a low score in rule 3. 
+This may be because of rule 3 only comparing the grayscale images and not much else 
+about it.
+
+## Design decision for V2: what Rule 4 is and why you chose it
+I chose Canny edge comparison because I think that comparing the edges 
+would lead to more precision between the images, and because the images that 
+rule 3 did not fired on were mostly cropped images, comparing the edges between 
+the images, I think, would lead to more precision.
+
+## Effect of the change: accuracy before/after on easy vs hard
+Accuracy before on Easy was 41 matched and 34 missed, on easy after rule 4, 
+was 41 matched and 34 missed. Accuracy on hard before was 38 hit and 22 misses, 
+and after rule 4 was 34 hits and 26 misses. 
+
+## Trade-offs: what new costs or risks did Rule 4 introduce
+Because of the addition of a rule 4, we need to tune rule 4 to be a good rule for it 
+to be effective and if it's not tuned enough, it would actually lead to a decrease 
+in effectiveness because it weigh down the accuracy by removing some of the effectiveness 
+of rule 1 and 2 by lowering the maximum score of them. Because of that rule 1 and 2, 
+were given less of a saying in the matching of images. 
+
+
+
+
+
+
+
 ## Backup doctrine
 
 Your Codio box can be reset at any time. **Your fork on GitHub is the only safe
