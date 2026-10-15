@@ -68,7 +68,7 @@ def rule4_edges(target, input_path):
         out["metric"] = round(max(0.0, min(1.0, metric)), 3)
         out["note"] = f"Edge matching {out['metric']:.2f}"
 
-        if out["metric"] >= 0.2:
+        if out["metric"] >= 0.18:
             out["fired"] = True
             out["score"] = int(round(10 * out["metric"]))
 
